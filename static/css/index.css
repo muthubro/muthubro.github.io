@@ -1,0 +1,69 @@
+body {
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: white;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.transparent {
+    background: rgba(0, 0, 0, 0);
+}
+
+a, a:active, a:link, a:hover, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.home_link {
+    font-family: gloria-hallelujah, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.about_link, .gallery_link {
+    font-size: 20px;
+}
+
+.home_content {
+    /* background: lightblue; */
+    padding-top: 180px;
+}
+
+.myphoto-container {
+    margin-left: 5%;
+}
+
+.myphoto {
+    box-shadow: 3px 5px 6px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+}
+
+.thisis {
+    font-size: 32px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.briefme {
+    font-size: 20px;
+    color: #707070;
+    padding: 1rem 0 1rem 0;
+}
+
+.briefme.one {
+    padding-top: 5rem;
+}
