@@ -7,11 +7,17 @@
         <link rel="stylesheet" href="static/css/index.css">
         <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/gvi2jfb.css">
         <script src="js/index.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
     </head>
     <body>
         <div class="cover container-fluid">
-            <div class="navbar row">
+            <div class="navbar transparent row">
                 <span class="col-lg-2 offset-lg-6 col-md-2 offset-md-6 col-sm-2 offset-sm-6"><a href="#" class="selected" id="about" onclick="onNavClick('about')">About</a></span>
                 <span class="col-lg-2 col-md-2 col-sm-2"><a href="#" id="gallery" onclick="onNavClick('gallery')">Gallery</a></span>
                 <span class="col-lg-2 col-md-2 col-sm-2"><a href="#" id="contact" onclick="onNavClick('contact')">Contact</a></span>
@@ -25,6 +31,37 @@
                         <p class="about-content col-lg-12 col-md-12 col-sm-12">I am an engineering student and a web developer.</p>
                     </div>
                 </div>
+            </div>
+            <div class="gallery row" id="gallery-section">
+                <div class="col-lg-12">
+                    <div class="gallery-title row justify-content-center">Gallery</div>
+                    <div class="images row">
+                        <div class="col-lg-4">
+                            <img src="static/image/1.jpg" width="336" height="425" alt="1" />
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="static/image/2.jpg" width="336" height="425" alt="2" />
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="static/image/3.jpg" width="336" height="425" alt="3" />
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="static/image/4.jpg" width="336" height="425" alt="4" />
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="static/image/5.jpg" width="336" height="425" alt="5" />
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="static/image/6.jpg" width="336" height="425" alt="6" />
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="static/image/7.jpg" width="336" height="425" alt="7" />
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="static/image/8.jpg" width="336" height="425" alt="8" />
+                        </div>
+                    </div>
+                </div>  
             </div>
         </div>
     </body>
