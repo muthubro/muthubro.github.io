@@ -9,7 +9,7 @@ var scrollToElement = function(el, ms){
     var speed = (ms) ? ms : 600;
     console.log($(el).offset().top);
     $('html,body').animate({
-        scrollTop: $(el).offset().top
+        scrollTop: $(el).offset().top - 160
     }, speed);
 }
 
