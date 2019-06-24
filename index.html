@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-
-        <link rel="stylesheet" href="https://use.typekit.net/gvi2jfb.css">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <title>Muathasim's Page</title>
         <link rel="stylesheet" href="static/css/index.css">
-
-        <script src="assets/jQuery/jquery.min.js"></script>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="js/index.js"></script>
     </head>
     <body>
-        <div class="app container">
-            <div class="navbar transparent row">
-                <span class="home_link col-md-5 offset-md-1"><a href="">Muathasim</a></span>
-                <span class="about_link col-md-3 text-center"><a href="">About</a></span>
-                <span class="gallery_link col-md-3"><a href="">Gallery</a></span>
+        <div class="cover container-fluid">
+            <div class="navbar row">
+                <span class="col-lg-2 offset-lg-6 col-md-2 offset-md-6 col-sm-2 offset-sm-6"><a href="#" class="selected" id="about" onclick="onNavClick('about')">About</a></span>
+                <span class="col-lg-2 col-md-2 col-sm-2"><a href="#" id="gallery" onclick="onNavClick('gallery')">Gallery</a></span>
+                <span class="col-lg-2 col-md-2 col-sm-2"><a href="#" id="contact" onclick="onNavClick('contact')">Contact</a></span>
             </div>
-            <div class="home_content row">
-                <div class="col-md-4 myphoto-container"><img src="static/image/me1.jpg" class="myphoto" width="300px" /></div>
-                <div class="home_description col-md-6">
-                    <span class="thisis">This is Muathasim Mohamed</span>
-                    <span class="briefme one row">Muathasim studies at IIT Madras</span>
-                    <span class="briefme two row">Muathasim is from Kerala</span>
-                    <span class="briefme three row">But most importantly, Muathasim is a Developer</span>
+            <div class="about row">
+                <div class="col-lg-6 offset-lg-2 col-md-6 offset-md-2 col-sm-6 offset-sm-2">
+                    <div class="row">
+                        <span class="about-title col-lg-12 col-md-12 col-sm-12">Muathasim M Parambat</span>
+                    </div>
+                    <div class="row">
+                        <p class="about-content col-lg-12 col-md-12 col-sm-12">I am an engineering student and a web developer.</p>
+                    </div>
                 </div>
             </div>
         </div>
