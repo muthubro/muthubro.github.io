@@ -12,10 +12,15 @@ var scrollToElement = function(el, ms){
     }, speed);
 }
 
+function onEmailClick() {
+    window.open("mailto:muth4muathasim@gmail.com")
+}
+
 function onScroll() {
     let position = window.pageYOffset || document.documentElement.scrollTop;
     let aboutPosition = 300;
-    let galleryPosition = $("#gallery").offset().top + 300;
+    let galleryPosition = $("#gallery-section").offset().top + 300;
+    let contactPosition = $("#contact-section").offset().top;
 
     if (position <= aboutPosition) {
         document.getElementsByClassName("selected")[0].classList.remove("selected");
@@ -23,6 +28,9 @@ function onScroll() {
     } else if (position <= galleryPosition) {
         document.getElementsByClassName("selected")[0].classList.remove("selected");
         document.getElementById("gallery").classList.add("selected");
+    } else if (position <= contactPosition) {
+        document.getElementsByClassName("selected")[0].classList.remove("selected");
+        document.getElementById("contact").classList.add("selected");
     }
 
     if (position === 0) {

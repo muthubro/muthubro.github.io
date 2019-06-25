@@ -22,7 +22,7 @@
             <div class="navbar transparent row">
                 <span class="col-lg-2 offset-lg-6 col-md-2 offset-md-6 col-sm-2 offset-sm-6"><a href="#" class="selected" id="about" onclick="onNavClick('about')">About</a></span>
                 <span class="col-lg-2 col-md-2 col-sm-2"><a href="#" id="gallery" onclick="onNavClick('gallery')">Gallery</a></span>
-                <span class="col-lg-2 col-md-2 col-sm-2"><a href="#" id="contact" onclick="onNavClick('contact')" data-toggle="modal" data-target="#exampleModal">Contact</a></span>
+                <span class="col-lg-2 col-md-2 col-sm-2"><a href="#" id="contact" onclick="onNavClick('contact')">Contact</a></span>
             </div>
             <div class="about row" id="about-section">
                 <div class="col-lg-6 offset-lg-2 col-md-6 offset-md-2 col-sm-6 offset-sm-2">
@@ -65,36 +65,10 @@
                     </div>
                 </div>  
             </div>
-            <div class="footer row">
+            <div class="footer row" id="contact-section">
                 <div class="col-lg-4 offset-lg-8">
                     <span class="row">Mobile: 9544766381</span>
-                    <span class="row">Email: muth4muathasim@gmail.com</span>
-                </div>
-            </div>
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form class="form-group">
-                                <label for="name">Name</label>
-                                <input id="name" class="form-control" type="text" placeholder="Name" />
-                                <label for="email">Email</label>
-                                <input id="email" class="form-control" type="email" placeholder="Email" />
-                                <label for="message">Message</label>
-                                <textarea id="message" class="form-control" type="text" placeholder="Message"></textarea>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" id="submit" data-dismiss="modal" class="btn btn-primary">Submit</button>
-                        </div>
-                    </div>
+                    <span class="row">Email: <a id="email" href="#" onclick="onEmailClick()">muth4muathasim@gmail.com</a></span>
                 </div>
             </div>
         </div>
